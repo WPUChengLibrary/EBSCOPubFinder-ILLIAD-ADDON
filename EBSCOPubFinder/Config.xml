@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>EBSCOPubFinder</Name>
+  <Author>Gary Marks &amp; Hao Zeng, William Paterson University</Author>
+  <Version>1.0</Version>
+  <Active>true</Active>
+  <Type>Addon</Type>
+  <Description>Performs a search of EBSCO Publication Finder</Description>
+  <Forms>
+    <Form>FormRequest</Form>
+  </Forms>
+  <Settings>
+    <Setting name="AutoSearch" value="true" type="boolean">
+      <Description>Defines whether the search should be automatically performed when the form opens.</Description>
+    </Setting>
+    <Setting name="EBSCOPubFinderURL" value="http://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=44&amp;db=edspub&amp;groupid=main&amp;custid=xxxxxxxx&amp;profid=pfi&amp;authtype=ip,guest&amp;bquery=" type="string">
+      <Description>Replace xxxxxxxx with your unique EBSCO Cust ID</Description>
+    </Setting>
+  </Settings>
+  <Files>
+    <File>EBSCOPubFinder.lua</File>
+  </Files>
+</Configuration>
